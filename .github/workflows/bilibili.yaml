@@ -3,7 +3,7 @@ name: 哔哩哔哩签到
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 9 * * *'
+    - cron: '20 04 * * *'
   watch:
     types: [started]
 
