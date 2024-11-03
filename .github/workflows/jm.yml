@@ -1,21 +1,17 @@
 name: JM自动签到
 
 on:
-  workflow_dispatch:
   schedule:
     - cron: '20 16 * * *'
-  watch:
-    types: [started]
+  workflow_dispatch:
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    if: ${{ github.event.repository.owner.id }} == ${{ github.event.sender.id }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: "18Comic Autosign"
-        run: ./function/jm/autosign
+  punch_in:
+    runs-on: ubuntu-20.04
     env:
       ACCOUNTS: ${{ secrets.ACCOUNTS }}
+    steps:
+      - name: "checkout"
+        uses: actions/checkout@v1
+      - name: "Punch in"
+        run: ./function/jm/autosign
