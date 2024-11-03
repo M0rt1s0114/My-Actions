@@ -54,3 +54,4 @@
 |    `GOBOT_QQ`     |                                    go-cqhttp QQ                                     | 非必须 | 如果 GOBOT_URL 设置 /send_private_msg 则需要填入 user_id=个人 QQ 相反如果是 /send_group_msg 则需要填入 group_id=QQ 群                                                                                                                                                          |
 |   `GOBOT_TOKEN`   |                                   go-cqhttp Token                                   | 非必须 | 填写在 go-cqhttp 文件设置的访问密钥                                                                                                                                                                                                                                            |
 
+
