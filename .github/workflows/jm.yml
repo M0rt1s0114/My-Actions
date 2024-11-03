@@ -14,4 +14,4 @@ jobs:
       - name: "checkout"
         uses: actions/checkout@v1
       - name: "Punch in"
-        run: ./function/jm/autosign
+        run: ./autosign
