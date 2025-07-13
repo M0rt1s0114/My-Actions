@@ -54,21 +54,3 @@
 |    `GOBOT_URL`    |                                    go-cqhttp URL                                    | 非必须 | 推送到个人 QQ: http://127.0.0.1/send_private_msg 群：http://127.0.0.1/send_group_msg                                                                                                                                                                                           |
 |    `GOBOT_QQ`     |                                    go-cqhttp QQ                                     | 非必须 | 如果 GOBOT_URL 设置 /send_private_msg 则需要填入 user_id=个人 QQ 相反如果是 /send_group_msg 则需要填入 group_id=QQ 群                                                                                                                                                          |
 |   `GOBOT_TOKEN`   |                                   go-cqhttp Token                                   | 非必须 | 填写在 go-cqhttp 文件设置的访问密钥                                                                                                                                                                                                                                            |
-
-JM自动签到的Secret设置方法如下：
-
-[![img](https://github.com/forchannot/comic-auto-punch-in/raw/master/images/save_secret.png)](https://github.com/forchannot/comic-auto-punch-in/blob/master/images/save_secret.png)
-
-Secret名设置为`ACCOUNTS`，变量内容如下：
-
-```
-[
-  {
-    "type": "jinman",
-    "username": "username",
-    "password": "password"
-  }
-]
-```
-
-因为上面已经有Bika的自动签到功能了就只设置JM的就可以了
